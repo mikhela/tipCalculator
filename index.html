@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <header>
+        <div class="split-text">
+            <span>SPLI</span>
+            <span>TTER</span>
+        </div>
+        <div class="header__container">
+            <div class="content__left content">
+                <p>BILL</p>
+                <div class="input-container">
+                    <span class="dollar-sign">$</span>
+                    <input id="bill--input" type="number" step="0.01" min="0" placeholder="0.00">
+                </div>
+                <p style="margin-top: 20px;">Select Tip %</p>
+                <div class="percentage__container">
+                    <button>5%</button>
+                    <button>10%</button>
+                    <button>15%</button>
+                    <button>25%</button>
+                    <button>50%</button>
+                    <button id="custom-button">Custom</button>
+                </div>
+                <div class="input-container" id="custom-input-container" style="display:none;">
+                    <span class="dollar-sign">$</span>
+                    <input id="custom-percentage" type="number" step="1" min="0" placeholder="0">
+                </div>
+                <p style="margin-top: 30px;">Number of People</p>
+                <div class="input-container">
+                    <span class="dollar-sign"><i class="fa-solid fa-user"></i></span>
+                    <input id="people--quantity" type="number" step="1" min="0" placeholder="0">
+                </div>
+            </div>
+
+            <div class="content__right content">
+                <div class="tip__content amcont">
+                    <div class="tip__inner__container__left amcont__container">
+                        <h2>Tip amount</h2>
+                        <p>/  person</p>
+                    </div>
+                    <span id="tip--amount">$0.00</span>
+                </div>
+                <div class="total__content amcont">
+                    <div class="tip__inner__container__left amcont__container">
+                        <h2>Total</h2>
+                        <p>/  person</p>
+                    </div>
+                    <span id="total">$0.00</span>
+                </div>
+                <button id="reset-button">RESET</button>
+            </div>
+        </div>
+    </header>
+
+    <script src="app.js"></script>
+</body>
+</html>

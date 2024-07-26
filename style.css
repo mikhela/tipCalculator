@@ -1,0 +1,294 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito";
+}
+@font-face {
+    font-family: "Nunito";
+    src: url(fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+header
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #c8e4e7;
+}
+.split-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    line-height: 1;
+    position: relative;
+    top: 10%;
+    color: #84a4a5;
+    font-weight: 900;
+ 
+} 
+
+
+.header__container
+{
+    width: 1200px;
+    max-width: 100%;
+    min-height: 600px;
+    border-radius: 20px;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+.input-container input[type="number"] {
+    padding-left: 20px; 
+    text-align: right;
+    width: 510px;
+    max-width: 100%;
+    font-size: 25px;
+    background-color: #c8e4e7;
+    border: none;
+    padding: 5px;
+    border-radius: 6px;
+}
+.input-container .dollar-sign {
+    position: absolute;
+    left: 5px; 
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 25px; 
+    color: #84a4a5;
+}
+.content
+{
+    width: 50%;
+    border-radius: 20px;
+    height: 550px;
+}
+.content__left
+{
+    background-color: white;
+    padding: 20px;
+}
+
+.content__left p
+{
+    color: #84a4a5;
+    font-size: 20px;
+}
+
+
+    .percentage__container {
+        width: 510px;
+        max-width: 100%;
+        margin-top: 20px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 10px; 
+    }
+.percentage__container button
+{
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    background-color: #275455;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+.percentage__container button:hover
+{
+    background-color: #3cad9b;
+    color: #275455;
+}
+.percentage__container button:last-child:hover
+{
+    background-color: #3cad9b;
+    color: #275455;
+}
+.percentage__container button:last-child {
+    background-color: #dbe9e6; 
+    color: #275455;
+}
+
+
+.content__right
+{
+    background-color: #275455;
+    position: relative;
+}
+
+.amcont
+{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: auto;
+}
+.amcont span
+{
+    font-size: 32px;
+    color: #94dbcf;
+}
+
+
+.amcont .amcont__container h2
+{
+    color: white;
+    font-size: 20px;
+}
+
+.amcont .amcont__container p
+{
+    color: #82beb4;
+}
+
+
+.content__right button
+{
+    width: 500px;
+    background-color: #94dbcf;
+    color: #275455;
+    border-radius: 8px;
+    font-size: 25px;
+    padding: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    font-weight: 900;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.content__right button:hover
+{
+    background-color: #3cad9b;
+    color: #275455;
+}
+
+@media only screen and (max-width: 1440px)
+{
+.header__container
+{
+    width: 900px;
+}
+.percentage__container
+{
+    width: 330px;
+}
+.percentage__container button
+{
+    width: 100px;
+}
+.input-container input[type="number"]
+{
+    width: 330px;
+}
+.amcont{width: 350px;}
+.content__right button
+{
+    width: 300px;
+}
+}
+
+@media only screen and (max-width: 930px)
+{
+    .header__container
+    {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        background-color: white;
+        left: 0;
+        top: 0;
+        transform: translate(-0%, -0%);
+        position: relative;
+        padding: 30px;
+        display: block;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    } 
+    .input-container input[type="number"] {
+        width: 600px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .input-container
+    {
+        margin-top: 20px;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+    .dollar-sign
+    {
+        display: none;
+    }
+    p
+    {
+        text-align: center;
+    }
+    .content
+    {
+        width: 100%;
+    }
+    .percentage__container
+    {
+        margin: 20px auto;
+    }
+}
+
+
+@media only screen and (max-width: 655px)
+{
+    .input-container input[type="number"] {
+        width: 330px;
+    }
+    
+}
+@media only screen and (max-width: 430px)
+{
+    .input-container input[type="number"] {
+        width: 260px;
+    }
+    .percentage__container
+    {
+        width: 260px;
+    }
+    .percentage__container button
+    {
+        width: 80px;
+        padding: 5px;
+    }
+    .amcont {
+        width: 275px;
+    }
+    .content__right button {
+        width: 265px;
+    }
+    .amcont span {
+        font-size: 18px;
+    }
+    .amcont .amcont__container h2 {
+        font-size: 13px;
+    }
+}
